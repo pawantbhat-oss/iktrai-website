@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IKTRAI | RCA & AI Engineer Agents</title>
+    <script src="https://tailwindcss.com"></script>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    </style>
+</head>
+<body class="bg-white text-black antialiased selection:bg-black selection:text-white">
+
+    <!-- Header & Logo -->
+    <header class="max-w-5xl mx-auto px-6 py-12 flex justify-between items-center border-b border-gray-100">
+        <div class="flex items-center space-x-3">
+            <!-- Architectural Abstract Logo -->
+            <div class="flex items-center justify-center w-8 h-8 border-2 border-black font-black text-xs tracking-tighter">
+                ◣■◢
+            </div>
+            <span class="text-xl font-bold tracking-[0.3em] uppercase">Iktrai</span>
+        </div>
+        <nav class="hidden md:flex space-x-8 text-sm font-medium tracking-wider uppercase text-gray-500">
+            <a href="#services" class="hover:text-black transition-colors">Services</a>
+            <a href="#book" class="hover:text-black transition-colors">Book Consultation</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <main class="max-w-5xl mx-auto px-6 py-24">
+        <div class="max-w-3xl">
+            <p class="text-xs font-bold tracking-[0.25em] uppercase text-gray-400 mb-4">Autonomous Resolution Infrastructure</p>
+            <h1 class="text-5xl md:text-7xl font-light tracking-tight leading-none mb-8">
+                Root Cause Analysis <br><span class="font-medium">Driven by AI Agents.</span>
+            </h1>
+            <p class="text-xl text-gray-600 font-light leading-relaxed mb-12 max-w-2xl">
+                We design and deploy autonomous AI Engineer Agents built to diagnose complex system anomalies, trace deep infrastructure bugs, and resolve structural failures in real-time.
+            </p>
+            <a href="#book" class="inline-block bg-black text-white text-sm font-semibold tracking-widest uppercase px-8 py-4 border border-black hover:bg-white hover:text-black transition-all duration-300">
+                Schedule Agent Review
+            </a>
+        </div>
+    </main>
+
+    <!-- Services Section -->
+    <section id="services" class="bg-gray-50 border-y border-gray-100 py-24">
+        <div class="max-w-5xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div>
+                <span class="text-xs font-mono text-gray-400">01 //</span>
+                <h3 class="text-lg font-medium tracking-tight mt-2 mb-3">Autonomous RCA</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">Continuous deep-trace log analysis and systemic fault isolation executing without human latency.</p>
+            </div>
+            <div>
+                <span class="text-xs font-mono text-gray-400">02 //</span>
+                <h3 class="text-lg font-medium tracking-tight mt-2 mb-3">AI Engineer Swarms</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">Multi-agent developer systems configured to automatically refactor, compile, and patch production code bases safely.</p>
+            </div>
+            <div>
+                <span class="text-xs font-mono text-gray-400">03 //</span>
+                <h3 class="text-lg font-medium tracking-tight mt-2 mb-3">Predictive Health</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">Early-stage anomaly cross-correlation frameworks preventing cascading infrastructure failures before they impact revenue.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Form Section -->
+    <section id="book" class="max-w-5xl mx-auto px-6 py-24">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+            <div>
+                <h2 class="text-3xl font-light tracking-tight mb-4">Initialize Consultation</h2>
+                <p class="text-gray-500 text-sm leading-relaxed mb-6">
+                    Select a service branch and assign a time slot. An engineering coordinator agent will be provisioned instantly to review your structural data blueprints.
+                </p>
+                <div class="p-4 bg-gray-50 border-l-2 border-black text-xs font-mono text-gray-600">
+                    Status: System Ready for Onboarding // Zero Cost Demo
+                </div>
+            </div>
+
+            <!-- Free Web3Forms Interface -->
+            <form action="https://web3forms.com" method="POST" class="space-y-6">
+                <!-- Using Web3Forms Free Access Token for zero-server contact forms -->
+                <input type="hidden" name="access_key" value="YOUR_FREE_ACCESS_KEY_HERE">
+                
+                <div>
+                    <label class="block text-xs font-bold tracking-widest uppercase mb-2">Company Email</label>
+                    <input type="email" name="email" required class="w-full border-b-2 border-gray-200 focus:border-black outline-none py-2 text-sm transition-colors" placeholder="cto@enterprise.com">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold tracking-widest uppercase mb-2">Requested Architecture Focus</label>
+                    <select name="service" class="w-full border-b-2 border-gray-200 focus:border-black outline-none py-2 text-sm transition-colors bg-white">
+                        <option>Production RCA Deployment</option>
+                        <option>Custom AI Engineer Agent Integration</option>
+                        <option>System Architecture Audit</option>
+                    </select>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-bold tracking-widest uppercase mb-2">Date Preference</label>
+                        <input type="date" name="date" required class="w-full border-b-2 border-gray-200 focus:border-black outline-none py-2 text-sm text-gray-500">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold tracking-widest uppercase mb-2">Time (UTC)</label>
+                        <input type="time" name="time" required class="w-full border-b-2 border-gray-200 focus:border-black outline-none py-2 text-sm text-gray-500">
+                    </div>
+                </div>
+                <button type="submit" class="w-full bg-black text-white text-xs font-bold tracking-widest uppercase py-4 border border-black hover:bg-white hover:text-black transition-all">
+                    Request Secure Booking Link
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-100 py-8">
+        <div class="max-w-5xl mx-auto px-6 text-center text-xs font-mono text-gray-400">
+            &copy; 2026 IKTRAI. ALL AGENTS RESERVED. OPTIMIZED INFRASTRUCTURE.
+        </div>
+    </footer>
+
+</body>
+</html>
