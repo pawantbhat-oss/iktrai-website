@@ -3,152 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IKTRAI // RCA & AI Engineer Agents</title>
-    <link rel="stylesheet" href="https://cloudflare.com">
-    <style>
-        @import url('https://googleapis.com');
-        
-        body { 
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            letter-spacing: -0.02em;
-        }
-        .mono-text { font-family: 'JetBrains Mono', monospace; }
-        
-        /* Grid background style */
-        .bg-grid {
-            background-size: 40px 40px;
-            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.03) 1px, transparent 1px),
-                              linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
-        }
-        
-        /* Subtle glow for tech aesthetic */
-        .premium-border {
-            border: 1px solid rgba(0, 0, 0, 0.07);
-            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-        }
-        .premium-border:hover {
-            border-color: rgba(0, 0, 0, 1);
-            box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.05);
-            transform: translateY(-2px);
-        }
-    </style>
+    <title>IKTRAI // RCA & AI ENGINEER AGENTS</title>
+    <!-- Linking your custom style sheets file below -->
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-white text-black antialiased bg-grid min-h-screen flex flex-col justify-between">
+<body>
 
-    <!-- Subtle top status bar -->
-    <div class="w-full border-b border-gray-100 bg-white py-2 px-6 flex justify-between items-center text-xs mono-text text-gray-400">
-        <div>[ CORE NETWORK: OPERATIONAL ]</div>
-        <div class="hidden sm:block">SYSTEM NODE v2.0.26 // LATENCY: 12ms</div>
+    <!-- Status Ribbon -->
+    <div class="top-bar">
+        <div>[ CORE NETWORK: RUNNING ]</div>
+        <div>SYSTEM NODE v2.0.26 // PLATFORM: FREE</div>
     </div>
 
-    <!-- Header & Logo -->
-    <header class="w-full max-w-6xl mx-auto px-6 py-8 flex justify-between items-center bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-gray-100">
-        <div class="flex items-center space-x-4">
-            <!-- Sleek Minimalist Abstract Architectural Logo -->
-            <div class="relative w-9 h-9 flex items-center justify-center border-2 border-black bg-black text-white font-mono text-base font-black tracking-tighter select-none overflow-hidden transition-transform duration-500 hover:rotate-180">
-                <span>IK</span>
+    <!-- Premium Navigation Bar -->
+    <header>
+        <div class="container header-flex">
+            <div class="logo-box">
+                <div class="logo-mark">IK</div>
+                <div class="logo-text">
+                    <h1>Iktrai</h1>
+                    <p>RCA &amp; AI Engineer Agents</p>
+                </div>
             </div>
-            <div class="flex flex-col">
-                <span class="text-xl font-bold tracking-[0.35em] uppercase leading-none font-sans">Iktrai</span>
-                <span class="text-[9px] text-gray-400 mono-text tracking-widest mt-1 uppercase">RCA &amp; AI ENGINEER AGENTS</span>
-            </div>
+            <nav class="nav-links">
+                <a href="#services">Services</a>
+                <a href="#book" class="btn-nav">Engage Agent</a>
+            </nav>
         </div>
-        <nav class="hidden md:flex space-x-8 text-xs font-semibold tracking-widest uppercase text-gray-500">
-            <a href="#services" class="hover:text-black transition-colors py-2">[ SERVICES ]</a>
-            <a href="#book" class="bg-black text-white hover:bg-neutral-800 transition-all px-4 py-2 border border-black">[ ENGAGE AGENT ]</a>
-        </nav>
     </header>
 
-    <!-- Hero Section -->
-    <main class="w-full max-w-6xl mx-auto px-6 pt-24 pb-16">
-        <div class="max-w-4xl">
-            <div class="inline-flex items-center space-x-2 bg-gray-50 border border-gray-200 px-3 py-1 text-xs mono-text text-gray-600 mb-6 rounded-full">
-                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-                <span>Autonomous Resolution Core Active</span>
-            </div>
-            
-            <h1 class="text-6xl md:text-8xl font-extralight tracking-tighter text-black leading-none mb-8">
-                Root Cause Analysis <br>
-                <span class="font-bold bg-clip-text text-transparent bg-gradient-to-r from-black to-gray-600">Built for Scale.</span>
-            </h1>
-            
-            <p class="text-xl md:text-2xl text-gray-500 font-light leading-relaxed mb-12 max-w-3xl">
-                We deploy hyper-specialized autonomous <span class="text-black font-normal">AI Engineer Agents</span> configured to ingest telemetry, trace deep system failures, isolate structural bugs, and push patches completely natively.
-            </p>
-            
-            <div class="flex flex-wrap gap-4">
-                <a href="#book" class="bg-black text-white text-xs font-bold tracking-widest uppercase px-8 py-5 border border-black hover:bg-transparent hover:text-black transition-all duration-300 shadow-lg hover:shadow-none">
-                    Initialize Diagnostic System
-                </a>
-                <a href="#services" class="bg-white text-black text-xs font-bold tracking-widest uppercase px-8 py-5 border border-gray-200 hover:border-black transition-all duration-300">
-                    Explore Agent Matrix &rarr;
-                </a>
-            </div>
+    <!-- Visual Hero Block -->
+    <section class="container hero">
+        <div class="status-badge">
+            <span class="status-dot"></span>
+            <span>Autonomous Resolution Core Active</span>
         </div>
-    </main>
+        <h2>Root Cause Analysis <br><strong>Built for Scale.</strong></h2>
+        <p class="hero-desc">
+            We deploy hyper-specialized autonomous AI Engineer Agents configured to ingest cloud telemetry, isolate deep infrastructure bugs, trace system errors, and commit native system patches instantly.
+        </p>
+        <div class="btn-group">
+            <a href="#book" class="btn-primary">Initialize Diagnostic System</a>
+            <a href="#services" class="btn-secondary">Explore Architecture Matrix &rarr;</a>
+        </div>
+    </section>
 
-    <!-- Services Core Section -->
-    <section id="services" class="w-full border-t border-gray-200 bg-white py-24 z-10">
-        <div class="w-full max-w-6xl mx-auto px-6">
-            <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-16 border-b border-gray-100 pb-6">
+    <!-- Structured Functional Blocks -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header">
                 <div>
-                    <p class="text-xs font-bold tracking-widest text-gray-400 uppercase mb-2">01 // STRUCTURAL CAPABILITIES</p>
-                    <h2 class="text-3xl font-light tracking-tight">Core Agent Subsystems</h2>
+                    <div class="section-tag">01 // OPERATIONS MODULE</div>
+                    <div class="section-title">Core Agent Subsystems</div>
                 </div>
-                <div class="text-xs font-mono text-gray-400 mt-4 md:mt-0">[ COMPILING ARCHITECTURE PROTOCOLS ]</div>
+                <div class="section-tag" style="color:#d1d5db">[ COMPILE INTEGRITY PARAMS ]</div>
             </div>
             
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white p-8 border border-gray-100 premium-border relative group">
-                    <div class="text-xs mono-text text-gray-300 mb-6">FUNCTION_BRANCH_01</div>
-                    <h3 class="text-xl font-bold tracking-tight text-black mb-4">Autonomous RCA</h3>
-                    <p class="text-gray-500 text-sm leading-relaxed font-light">Continuous distributed trace processing and log-file correlation to isolate failure anchors down to the exact breaking syntax line within seconds.</p>
+            <div class="grid-3">
+                <div class="card">
+                    <div class="card-num">LOG_SYS_01</div>
+                    <h3>Autonomous RCA</h3>
+                    <p>Continuous distributed environment trace parsing and cross-correlation structures engineered to discover system exceptions down to the code line.</p>
                 </div>
-                
-                <div class="bg-white p-8 border border-gray-100 premium-border relative group">
-                    <div class="text-xs mono-text text-gray-300 mb-6">FUNCTION_BRANCH_02</div>
-                    <h3 class="text-xl font-bold tracking-tight text-black mb-4">Agent Engineer Swarms</h3>
-                    <p class="text-gray-500 text-sm leading-relaxed font-light">Collaborative node multi-agent clusters designed to orchestrate isolated codebase debugging, local validation testing, and container patching safely.</p>
+                <div class="card">
+                    <div class="card-num">LOG_SYS_02</div>
+                    <h3>Agent Code Swarms</h3>
+                    <p>Collaborative automated developer node networks designed to configure isolated staging tests, build validations, and safely distribute container patches.</p>
                 </div>
-                
-                <div class="bg-white p-8 border border-gray-100 premium-border relative group">
-                    <div class="text-xs mono-text text-gray-300 mb-6">FUNCTION_BRANCH_03</div>
-                    <h3 class="text-xl font-bold tracking-tight text-black mb-4">Predictive Health Networks</h3>
-                    <p class="text-gray-500 text-sm leading-relaxed font-light">Early-warning systemic drift recognition engines calculating system strain boundaries to prevent compounding multi-region service crashes.</p>
+                <div class="card">
+                    <div class="card-num">LOG_SYS_03</div>
+                    <h3>Predictive Health</h3>
+                    <p>Proactive resource degradation drift recognition metrics built to identify operational anomalies before they cascade into global failures.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Interactive Consultation Dashboard Section -->
-    <section id="book" class="w-full border-t border-gray-200 bg-gray-50 py-24 z-10">
-        <div class="w-full max-w-6xl mx-auto px-6">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
-                
-                <!-- Description info panel -->
-                <div class="lg:col-span-5">
-                    <p class="text-xs font-bold tracking-widest text-gray-400 uppercase mb-2">02 // INBOUND DISPATCH</p>
-                    <h2 class="text-4xl font-light tracking-tight text-black mb-6">Secure Consultation Pipeline</h2>
-                    <p class="text-gray-500 text-sm font-light leading-relaxed mb-8">
-                        Provision an evaluation vector for your enterprise network. Provide specific metadata parameters below, and an engineering agent interface will configure a dedicated review workspace.
+    <!-- Professional Onboarding Interface Dashboard -->
+    <section id="book" class="booking-section">
+        <div class="container">
+            <div class="grid-2">
+                <div class="info-panel">
+                    <div class="section-tag">02 // INBOUND INTEGRATION</div>
+                    <h2 class="section-title" style="font-size: 36px; margin: 16px 0 24px 0;">Secure Consultation Intake</h2>
+                    <p>
+                        Provision an operations audit lane for your platform architecture. Input details below to receive a secure private deployment access link verified by our agent dispatch network.
                     </p>
-                    <div class="p-6 bg-white border border-gray-200 rounded-sm shadow-sm">
-                        <div class="flex items-center space-x-3 text-xs mono-text text-gray-600 mb-2">
-                            <span class="w-2 h-2 rounded-full bg-black"></span>
-                            <span>Secure Integration Protocol V4</span>
-                        </div>
-                        <p class="text-xs text-gray-400 leading-normal font-light">All system architectures analyzed by Iktrai agents are compartmentalized within zero-trust localized runtime environments.</p>
+                    <div class="status-box">
+                        <div style="font-weight:bold; margin-bottom: 8px;">[ ACCESS MATRIX PROTOCOL ]</div>
+                        All customer engineering telemetries run isolated within hardware-encrypted container configurations.
                     </div>
                 </div>
 
-                <!-- Sleek Minimal Form Dashboard -->
-                <div class="lg:col-span-7 bg-white p-10 border border-gray-200 shadow-xl rounded-sm">
-                    <form action="https://web3forms.com" method="POST" class="space-y-8">
+                <!-- Clean Form Dashboard Layout -->
+                <div class="form-box">
+                    <form action="https://web3forms.com" method="POST">
                         <input type="hidden" name="access_key" value="YOUR_FREE_ACCESS_KEY_HERE">
                         
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                            <div>
-                                <label class="block text-xs font-bold tracking-widest uppercase text-gray-400 mb-3">Enterprise Contact Email</label>
-                                <input type="email" name="email" required class="w-full border-b-2 border-gray-100 focus:border-black outline-none py-2 text-sm transition-all text-black font-light" placeholder="director@infrastructure.io">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label>Corporate Email</label>
+                                <input type="email" name="email" required placeholder="cto@enterprise.io">
                             </div>
-                            <div>
+                            <div class="form-group">
+                                <label>System Focus</label>
+                                <select name="service">
+                                    <option>Production Environment RCA</option>
+                                    <option>Custom Code Swarm Build</option>
+                                    <option>Vulnerability Audit Analysis</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label>Target System Date</label>
+                                <input type="date" name="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Time Selection (UTC)</label>
+                                <input type="time" name="time" required>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn-submit">Dispatch System Audit Request &rarr;</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Polished Minimal Footer -->
+    <footer>
+        <div class="container footer-flex">
+            <div>&copy; 2026 IKTRAI. LOGICS APPLIED SYSTEMATICALLY.</div>
+            <div class="sec-tag">[ ENCRYPTED ENDPOINT ACTIVE ]</div>
+        </div>
+    </footer>
+
+</body>
+</html>
