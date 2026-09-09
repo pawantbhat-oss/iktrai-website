@@ -3,133 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IKTRAI | RCA & AI Engineer Agents</title>
-    <!-- Replacing script with direct reliable stylesheet link -->
+    <title>IKTRAI // RCA & AI Engineer Agents</title>
     <link rel="stylesheet" href="https://cloudflare.com">
     <style>
+        @import url('https://googleapis.com');
+        
         body { 
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            letter-spacing: -0.025em;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            letter-spacing: -0.02em;
         }
-        .tracking-widest-logo { letter-spacing: 0.35em; }
-        .tracking-widest-tags { letter-spacing: 0.2em; }
+        .mono-text { font-family: 'JetBrains Mono', monospace; }
+        
+        /* Grid background style */
+        .bg-grid {
+            background-size: 40px 40px;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+        }
+        
+        /* Subtle glow for tech aesthetic */
+        .premium-border {
+            border: 1px solid rgba(0, 0, 0, 0.07);
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .premium-border:hover {
+            border-color: rgba(0, 0, 0, 1);
+            box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.05);
+            transform: translateY(-2px);
+        }
     </style>
 </head>
-<body class="bg-white text-black antialiased">
+<body class="bg-white text-black antialiased bg-grid min-h-screen flex flex-col justify-between">
+
+    <!-- Subtle top status bar -->
+    <div class="w-full border-b border-gray-100 bg-white py-2 px-6 flex justify-between items-center text-xs mono-text text-gray-400">
+        <div>[ CORE NETWORK: OPERATIONAL ]</div>
+        <div class="hidden sm:block">SYSTEM NODE v2.0.26 // LATENCY: 12ms</div>
+    </div>
 
     <!-- Header & Logo -->
-    <header class="max-w-5xl mx-auto px-6 py-12 flex justify-between items-center border-b border-gray-100">
+    <header class="w-full max-w-6xl mx-auto px-6 py-8 flex justify-between items-center bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-gray-100">
         <div class="flex items-center space-x-4">
-            <!-- Geometric Abstract Logo Mark -->
-            <div class="flex items-center justify-center w-9 h-9 border-2 border-black bg-black text-white font-mono text-xs font-bold leading-none select-none">
-                ▲
+            <!-- Sleek Minimalist Abstract Architectural Logo -->
+            <div class="relative w-9 h-9 flex items-center justify-center border-2 border-black bg-black text-white font-mono text-base font-black tracking-tighter select-none overflow-hidden transition-transform duration-500 hover:rotate-180">
+                <span>IK</span>
             </div>
             <div class="flex flex-col">
-                <span class="text-xl font-bold tracking-widest-logo uppercase leading-none">Iktrai</span>
-                <span class="text-xxs text-gray-400 font-mono tracking-tighter mt-1 uppercase" style="font-size: 0.65rem;">RCA & AI Agents</span>
+                <span class="text-xl font-bold tracking-[0.35em] uppercase leading-none font-sans">Iktrai</span>
+                <span class="text-[9px] text-gray-400 mono-text tracking-widest mt-1 uppercase">RCA &amp; AI ENGINEER AGENTS</span>
             </div>
         </div>
-        <nav class="hidden md:flex space-x-8 text-xs font-semibold tracking-widest uppercase text-gray-400">
-            <a href="#services" class="hover:text-black transition-colors">Services</a>
-            <a href="#book" class="hover:text-black transition-colors">Book Consultation</a>
+        <nav class="hidden md:flex space-x-8 text-xs font-semibold tracking-widest uppercase text-gray-500">
+            <a href="#services" class="hover:text-black transition-colors py-2">[ SERVICES ]</a>
+            <a href="#book" class="bg-black text-white hover:bg-neutral-800 transition-all px-4 py-2 border border-black">[ ENGAGE AGENT ]</a>
         </nav>
     </header>
 
     <!-- Hero Section -->
-    <main class="max-w-5xl mx-auto px-6 py-28">
-        <div class="max-w-3xl">
-            <p class="text-xs font-bold tracking-widest-tags uppercase text-gray-400 mb-5">Autonomous Resolution Infrastructure</p>
-            <h1 class="text-5xl md:text-7xl font-light tracking-tight text-gray-900 leading-none mb-8">
-                Root Cause Analysis <br><span class="font-bold text-black">Driven by AI Agents.</span>
+    <main class="w-full max-w-6xl mx-auto px-6 pt-24 pb-16">
+        <div class="max-w-4xl">
+            <div class="inline-flex items-center space-x-2 bg-gray-50 border border-gray-200 px-3 py-1 text-xs mono-text text-gray-600 mb-6 rounded-full">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                <span>Autonomous Resolution Core Active</span>
+            </div>
+            
+            <h1 class="text-6xl md:text-8xl font-extralight tracking-tighter text-black leading-none mb-8">
+                Root Cause Analysis <br>
+                <span class="font-bold bg-clip-text text-transparent bg-gradient-to-r from-black to-gray-600">Built for Scale.</span>
             </h1>
-            <p class="text-lg md:text-xl text-gray-500 font-light leading-relaxed mb-12 max-w-2xl">
-                We deploy autonomous AI Engineer Agents engineered to diagnose deep infrastructure failures, trace complex log anomalies, and patch code defects in real-time.
+            
+            <p class="text-xl md:text-2xl text-gray-500 font-light leading-relaxed mb-12 max-w-3xl">
+                We deploy hyper-specialized autonomous <span class="text-black font-normal">AI Engineer Agents</span> configured to ingest telemetry, trace deep system failures, isolate structural bugs, and push patches completely natively.
             </p>
-            <a href="#book" class="inline-block bg-black text-white text-xs font-bold tracking-widest uppercase px-8 py-5 border border-black hover:bg-white hover:text-black transition-all duration-300 shadow-sm">
-                Initialize System Review
-            </a>
+            
+            <div class="flex flex-wrap gap-4">
+                <a href="#book" class="bg-black text-white text-xs font-bold tracking-widest uppercase px-8 py-5 border border-black hover:bg-transparent hover:text-black transition-all duration-300 shadow-lg hover:shadow-none">
+                    Initialize Diagnostic System
+                </a>
+                <a href="#services" class="bg-white text-black text-xs font-bold tracking-widest uppercase px-8 py-5 border border-gray-200 hover:border-black transition-all duration-300">
+                    Explore Agent Matrix &rarr;
+                </a>
+            </div>
         </div>
     </main>
 
-    <!-- Services Section -->
-    <section id="services" class="bg-gray-50 border-y border-gray-100 py-24">
-        <div class="max-w-5xl mx-auto px-6">
-            <h2 class="text-xs font-bold tracking-widest-tags uppercase text-gray-400 mb-12">// CORE OPERATIONAL CAPABILITIES</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                <div class="bg-white p-8 border border-gray-200 shadow-sm">
-                    <span class="text-xs font-mono font-bold text-gray-300">01 /</span>
-                    <h3 class="text-lg font-bold tracking-tight text-black mt-4 mb-3">Autonomous RCA</h3>
-                    <p class="text-gray-500 text-sm leading-relaxed font-light">Continuous deep-trace system log analysis and isolation executing without human intervention protocols.</p>
+    <!-- Services Core Section -->
+    <section id="services" class="w-full border-t border-gray-200 bg-white py-24 z-10">
+        <div class="w-full max-w-6xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-16 border-b border-gray-100 pb-6">
+                <div>
+                    <p class="text-xs font-bold tracking-widest text-gray-400 uppercase mb-2">01 // STRUCTURAL CAPABILITIES</p>
+                    <h2 class="text-3xl font-light tracking-tight">Core Agent Subsystems</h2>
                 </div>
-                <div class="bg-white p-8 border border-gray-200 shadow-sm">
-                    <span class="text-xs font-mono font-bold text-gray-300">02 /</span>
-                    <h3 class="text-lg font-bold tracking-tight text-black mt-4 mb-3">Agent Swarms</h3>
-                    <p class="text-gray-500 text-sm leading-relaxed font-light">Multi-agent nodes configured to safely refactor, test, and patch complex production architecture anomalies.</p>
-                </div>
-                <div class="bg-white p-8 border border-gray-200 shadow-sm">
-                    <span class="text-xs font-mono font-bold text-gray-300">03 /</span>
-                    <h3 class="text-lg font-bold tracking-tight text-black mt-4 mb-3">Predictive Audits</h3>
-                    <p class="text-gray-500 text-sm leading-relaxed font-light">Cross-correlation systems identifying hidden software degradation structural risks prior to failure cascades.</p>
-                </div>
+                <div class="text-xs font-mono text-gray-400 mt-4 md:mt-0">[ COMPILING ARCHITECTURE PROTOCOLS ]</div>
             </div>
-        </div>
-    </section>
-
-    <!-- Booking Form Section -->
-    <section id="book" class="max-w-5xl mx-auto px-6 py-28">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
-            <div>
-                <h2 class="text-3xl font-light tracking-tight text-black mb-4">Request Consultation</h2>
-                <p class="text-gray-500 text-sm font-light leading-relaxed mb-8">
-                    Select your operational priority branch below. An autonomous scheduling matrix will route your inquiry directly to our engineering coordinator agents.
-                </p>
-                <div class="p-4 bg-gray-50 border-l-2 border-black text-xs font-mono text-gray-600 tracking-tight">
-                    SYSTEM STATUS: READY // ZERO BUDGET INTEGRATION
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 border border-gray-100 premium-border relative group">
+                    <div class="text-xs mono-text text-gray-300 mb-6">FUNCTION_BRANCH_01</div>
+                    <h3 class="text-xl font-bold tracking-tight text-black mb-4">Autonomous RCA</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed font-light">Continuous distributed trace processing and log-file correlation to isolate failure anchors down to the exact breaking syntax line within seconds.</p>
                 </div>
-            </div>
-
-            <!-- Free Web3Forms Form Submissions Container -->
-            <form action="https://web3forms.com" method="POST" class="space-y-6">
-                <input type="hidden" name="access_key" value="YOUR_FREE_ACCESS_KEY_HERE">
                 
-                <div>
-                    <label class="block text-xs font-bold tracking-widest uppercase text-gray-400 mb-2">Corporate Contact Email</label>
-                    <input type="email" name="email" required class="w-full border-b border-gray-300 focus:border-black outline-none py-3 text-sm transition-colors text-black font-light" placeholder="engineering@company.com">
+                <div class="bg-white p-8 border border-gray-100 premium-border relative group">
+                    <div class="text-xs mono-text text-gray-300 mb-6">FUNCTION_BRANCH_02</div>
+                    <h3 class="text-xl font-bold tracking-tight text-black mb-4">Agent Engineer Swarms</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed font-light">Collaborative node multi-agent clusters designed to orchestrate isolated codebase debugging, local validation testing, and container patching safely.</p>
                 </div>
-                <div>
-                    <label class="block text-xs font-bold tracking-widest uppercase text-gray-400 mb-2">Target Architecture Segment</label>
-                    <select name="service" class="w-full border-b border-gray-300 focus:border-black outline-none py-3 text-sm transition-colors bg-white text-black font-light">
-                        <option>Production Environment RCA</option>
-                        <option>AI Engineering Workflow Optimization</option>
-                        <option>Enterprise Integrity Audit</option>
-                    </select>
+                
+                <div class="bg-white p-8 border border-gray-100 premium-border relative group">
+                    <div class="text-xs mono-text text-gray-300 mb-6">FUNCTION_BRANCH_03</div>
+                    <h3 class="text-xl font-bold tracking-tight text-black mb-4">Predictive Health Networks</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed font-light">Early-warning systemic drift recognition engines calculating system strain boundaries to prevent compounding multi-region service crashes.</p>
                 </div>
-                <div class="grid grid-cols-2 gap-6">
-                    <div>
-                        <label class="block text-xs font-bold tracking-widest uppercase text-gray-400 mb-2">Date Preference</label>
-                        <input type="date" name="date" required class="w-full border-b border-gray-300 focus:border-black outline-none py-3 text-sm text-gray-600 font-light bg-transparent">
-                    </div>
-                    <div>
-                        <label class="block text-xs font-bold tracking-widest uppercase text-gray-400 mb-2">Preferred Window (UTC)</label>
-                        <input type="time" name="time" required class="w-full border-b border-gray-300 focus:border-black outline-none py-3 text-sm text-gray-600 font-light bg-transparent">
-                    </div>
-                </div>
-                <div class="pt-4">
-                    <button type="submit" class="w-full bg-black text-white text-xs font-bold tracking-widest uppercase py-5 border border-black hover:bg-white hover:text-black transition-all duration-300 shadow-sm">
-                        Deploy Booking Request Link
-                    </button>
-                </div>
-            </form>
+            </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="border-t border-gray-100 py-12 bg-white">
-        <div class="max-w-5xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-xs font-mono text-gray-400 space-y-4 md:space-y-0">
-            <div>&copy; 2026 IKTRAI. ALL SYSTEM INTELLIGENCES RESERVED.</div>
-            <div class="tracking-widest uppercase">[ SYSTEM SECURITY VERIFIED ]</div>
-        </div>
-    </footer>
+    <!-- Interactive Consultation Dashboard Section -->
+    <section id="book" class="w-full border-t border-gray-200 bg-gray-50 py-24 z-10">
+        <div class="w-full max-w-6xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+                
+                <!-- Description info panel -->
+                <div class="lg:col-span-5">
+                    <p class="text-xs font-bold tracking-widest text-gray-400 uppercase mb-2">02 // INBOUND DISPATCH</p>
+                    <h2 class="text-4xl font-light tracking-tight text-black mb-6">Secure Consultation Pipeline</h2>
+                    <p class="text-gray-500 text-sm font-light leading-relaxed mb-8">
+                        Provision an evaluation vector for your enterprise network. Provide specific metadata parameters below, and an engineering agent interface will configure a dedicated review workspace.
+                    </p>
+                    <div class="p-6 bg-white border border-gray-200 rounded-sm shadow-sm">
+                        <div class="flex items-center space-x-3 text-xs mono-text text-gray-600 mb-2">
+                            <span class="w-2 h-2 rounded-full bg-black"></span>
+                            <span>Secure Integration Protocol V4</span>
+                        </div>
+                        <p class="text-xs text-gray-400 leading-normal font-light">All system architectures analyzed by Iktrai agents are compartmentalized within zero-trust localized runtime environments.</p>
+                    </div>
+                </div>
 
-</body>
-</html>
+                <!-- Sleek Minimal Form Dashboard -->
+                <div class="lg:col-span-7 bg-white p-10 border border-gray-200 shadow-xl rounded-sm">
+                    <form action="https://web3forms.com" method="POST" class="space-y-8">
+                        <input type="hidden" name="access_key" value="YOUR_FREE_ACCESS_KEY_HERE">
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div>
+                                <label class="block text-xs font-bold tracking-widest uppercase text-gray-400 mb-3">Enterprise Contact Email</label>
+                                <input type="email" name="email" required class="w-full border-b-2 border-gray-100 focus:border-black outline-none py-2 text-sm transition-all text-black font-light" placeholder="director@infrastructure.io">
+                            </div>
+                            <div>
